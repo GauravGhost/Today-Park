@@ -29,7 +29,7 @@ namespace Highrise.Lua.Generated
         [SerializeField] public System.Boolean m_canZoom = true;
         [SerializeField] public System.Double m_touchRotationDampener = 0.4;
         [Tooltip("The pivot point that the target will be rotating around and the input plane will spawn at.")]
-        [SerializeField] public UnityEngine.Vector3 m_pivot = new Vector3(0, 0, 0);
+        [SerializeField] public UnityEngine.Vector3 m_pivot = new Vector3(0f, 0f, 0f);
         [Header("Zoom Settings")]
         [SerializeField] public System.Double m_zoomMin = 10;
         [SerializeField] public System.Double m_zoomMax = 50;

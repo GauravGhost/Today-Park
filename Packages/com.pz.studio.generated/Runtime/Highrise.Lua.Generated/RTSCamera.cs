@@ -32,6 +32,7 @@ namespace Highrise.Lua.Generated
         [SerializeField] public System.Double m_pitch = 30;
         [SerializeField] public System.Double m_yaw = 45;
         [SerializeField] public System.Boolean m_centerOnCharacterWhenSpawned = true;
+        [SerializeField] public System.Boolean m_keepPlayerInView = true;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -47,6 +48,7 @@ namespace Highrise.Lua.Generated
                 CreateSerializedProperty(_script.GetPropertyAt(4), m_pitch),
                 CreateSerializedProperty(_script.GetPropertyAt(5), m_yaw),
                 CreateSerializedProperty(_script.GetPropertyAt(6), m_centerOnCharacterWhenSpawned),
+                CreateSerializedProperty(_script.GetPropertyAt(7), m_keepPlayerInView),
             };
         }
     }

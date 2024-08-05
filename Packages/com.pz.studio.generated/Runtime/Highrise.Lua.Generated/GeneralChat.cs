@@ -23,6 +23,8 @@ namespace Highrise.Lua.Generated
         private const string s_scriptGUID = "9f704bff1826b43a3834478cd1499710";
         public override string ScriptGUID => s_scriptGUID;
 
+        [SerializeField] public System.Double m_maxVolumeDistance = 15;
+        [SerializeField] public System.Double m_minVolumeDistance = 30;
 
         protected override SerializedPropertyValue[] SerializeProperties()
         {
@@ -31,6 +33,8 @@ namespace Highrise.Lua.Generated
 
             return new SerializedPropertyValue[]
             {
+                CreateSerializedProperty(_script.GetPropertyAt(0), m_maxVolumeDistance),
+                CreateSerializedProperty(_script.GetPropertyAt(1), m_minVolumeDistance),
             };
         }
     }
